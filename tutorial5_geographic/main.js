@@ -10,11 +10,21 @@ const width = window.innerWidth * 0.9,
  * All these variables are empty before we assign something to them.*/
 let svg;
 
+var div = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
 /**
  * APPLICATION STATE
  * */
 let state = {
-  // + SET UP STATE
+  geojson: null,
+  departures: null,
+  hover: {
+    latitude: null,
+    longitude: null,
+    state: null,
+  },
 };
 
 /**
@@ -22,11 +32,12 @@ let state = {
  * Using a Promise.all([]), we can load more than one dataset at a time
  * */
 Promise.all([
-  d3.json("PATH_TO_YOUR_GEOJSON"),
-  d3.csv("PATH_TO_ANOTHER_DATASET", d3.autoType),
-]).then(([geojson, otherData]) => {
-  // + SET STATE WITH DATA
-  console.log("state: ", state);
+  d3.json("../data/countries.json"),
+  d3.csv("../data/tourists_average.csv", d3.autoType),
+]).then(([geojson, departures]) => {
+  state.geojson = geojson;
+  state.departures = departures;
+  // console.log("state: ", state);
   init();
 });
 
@@ -35,6 +46,16 @@ Promise.all([
  * this will be run *one time* when the data finishes loading in
  * */
 function init() {
+  // our projection and path are only defined once, and we don't need to access them in the draw function,
+  // so they can be locally scoped to init()
+  const projection = d3.geoMercator().fitSize([width, height], state.geojson);
+  const path = d3.geoPath().projection(projection);
+
+  var data = d3.map();
+  var colorScale = d3.scaleThreshold()
+    .domain([10000, 100000, 1000000, 3000000, 10000000, 50000000])
+    .range(d3.schemeBlues[7]);
+
   // create an svg element in our main `d3-container` element
   svg = d3
     .select("#d3-container")
@@ -42,11 +63,37 @@ function init() {
     .attr("width", width)
     .attr("height", height);
 
-  // + SET UP PROJECTION
-  // + SET UP GEOPATH
+  svg
+    .selectAll(".state")
+    // all of the features of the geojson, meaning all the states as individuals
+    .data(state.geojson.features)
+    .join("path")
+    .attr("d", path)
+    .attr("class", "state")
+    //.attr("fill", azureblue)
 
-  // + DRAW BASE MAP PATH
-  // + ADD EVENT LISTENERS (if you want)
+  
+
+  
+/**
+    .on("mouseover", d => {
+      // when the mouse rolls over this feature, do this
+      state.hover["state"] = d.properties.NAME;
+      draw(); // re-call the draw function when we set a new hoveredState
+    });*/
+
+  /**
+   * // EXAMPLE 2: going from x, y => lat-long
+  // this triggers any movement at all while on the svg
+  svg.on("mousemove", () => {
+    // we can use d3.mouse() to tell us the exact x and y positions of our cursor
+    const [mx, my] = d3.mouse(svg.node());
+    // projection can be inverted to return [lat, long] from [x, y] in pixels
+    const proj = projection.invert([mx, my]);
+    state.hover["longitude"] = proj[0];
+    state.hover["latitude"] = proj[1];
+    draw();
+  });**/
 
   draw(); // calls the draw function
 }
@@ -55,4 +102,20 @@ function init() {
  * DRAW FUNCTION
  * we call this everytime there is an update to the data/state
  * */
-function draw() {}
+function draw() {
+  // return an array of [key, value] pairs
+  hoverData = Object.entries(state.hover);
+
+  d3.select("#hover-content")
+    .selectAll("div.row")
+    .data(hoverData)
+    .join("div")
+    .attr("class", "row")
+    .html(
+      d =>
+        // each d is [key, value] pair
+        d[1] // check if value exist
+          ? `${d[0]}: ${d[1]}` // if they do, fill them in
+          : null // otherwise, show nothing
+    );
+}

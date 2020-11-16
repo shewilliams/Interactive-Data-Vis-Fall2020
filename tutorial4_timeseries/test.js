@@ -4,11 +4,11 @@
 const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 60, right: 40 },
+  tooltip = { width: 100, height: 100, x: 10, y: -30 };
   radius = 3,
   default_selection = "Select a Country";
 
-var div = d3.select("body")
-	.append("div")   
+var div = d3.select("body").append("div")   
   .attr("class", "tooltip")               
   .style("opacity", 0);
 
@@ -38,10 +38,10 @@ let state = {
 /**
  * LOAD DATA
  * */
-d3.csv("./arrivals.csv", d => ({
+d3.csv("../data/usa_meteorites.csv", d => ({
   year: new Date(d.Year, 0, 1),
-  country: d.Entity,
-  arrivals: +d.Arrivals,
+  usa_states: d.Place,
+  occurrence: +d.Occurrence,
 })).then(raw_data => {
   console.log("raw_data", raw_data);
   state.data = raw_data;
@@ -61,7 +61,7 @@ function init() {
 
   yScale = d3
     .scaleLinear()
-    .domain([0, d3.max(state.data, d => d.arrivals)])
+    .domain([0, d3.max(state.data, d => d.occurrence)])
     .range([height - margin.bottom, margin.top]);
 
   // AXES
@@ -81,7 +81,7 @@ function init() {
   selectElement
     .selectAll("option")
     .data([
-      ...Array.from(new Set(state.data.map(d => d.country))),
+      ...Array.from(new Set(state.data.map(d => d.usa_states))),
       default_selection,
     ])
     .join("option")
@@ -121,11 +121,10 @@ function init() {
     .attr("y", "50%")
     .attr("dx", "-3em")
     .attr("writing-mode", "vertical-rl")
-    .text("International Arrivals");
+    .text("Arrivals");
 
   draw(); // calls the draw function
 }
-
 /**
  * DRAW FUNCTION
  * we call this everytime there is an update to the data/state
@@ -134,11 +133,11 @@ function draw() {
   // filter the data for the selectedParty
   let filteredData = [];
   if (state.selectedCountry !== null) {
-    filteredData = state.data.filter(d => d.country === state.selectedCountry);
+    filteredData = state.data.filter(d => d.usa_states === state.selectedCountry);
   }
 
   // update the scale domain (now that our data has changed)
-  yScale.domain([0, d3.max(filteredData, d => d.arrivals)]);
+  yScale.domain([0, d3.max(filteredData, d => d.occurrence)]);
 
   // re-draw our yAxix since our yScale is updated with the new data
   d3.select("g.y-axis")
@@ -146,13 +145,17 @@ function draw() {
     .duration(1000)
     .call(yAxis.scale(yScale)); // this updates the yAxis' scale to be our newly updated one
 
-  // we define our line function generator telling it how to access the x,y values for each point
+  // we define our area function generator telling it how to access the x,y values for each point
   const areaFunc = d3
     .area()
     .x(d => xScale(d.year))
     .y0(height - 50)
-    .y1(d => yScale(d.arrivals));
-    
+    .y1(d => yScale(d.occurrence));
+
+    const lineFunc = d3
+    .line()
+    .x(d => xScale(d.year))
+    .y(d => yScale(d.occurrence));
 
   const dot = svg
     .selectAll(".dot")
@@ -163,24 +166,23 @@ function draw() {
         enter
           .append("circle")
           .attr("class", "dot") // Note: this is important so we can identify it in future updates
-          .attr("r", radius)
+          .attr("r", radius) 
           .attr("cy", height - margin.bottom) // initial value - to be transitioned
           .attr("cx", d => xScale(d.year))
           .on("mouseover", function(d) {      
             div.transition()        
-                 .duration(200)      
-                 .style("opacity", .9);      
-                 div.text("Number of Arrivals: " + d.arrivals)
-                 .style("left", (d3.event.pageX) + "px")     
-                 .style("top", (d3.event.pageY - 28) + "px");    
-        })   
-      
-          // fade out tooltip on mouse out               
-          .on("mouseout", function(d) {       
-              div.transition()        
-                 .duration(500)      
-                 .style("opacity", 0);   
-          }),
+                .duration(200)      
+                .style("opacity", .9);      
+            div.html(d.occurrence)  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 28) + "px");    
+            })                  
+        .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(500)      
+                .style("opacity", 0);   
+        }),
+
       update => update,
       exit =>
         exit.call(exit =>
@@ -200,7 +202,7 @@ function draw() {
         selection
           .transition() // initialize transition
           .duration(1000) // duration 1000ms / 1s
-          .attr("cy", d => yScale(d.arrivals)) // started from the bottom, now we're here
+          .attr("cy", d => yScale(d.occurrence)) // started from the bottom, now we're here
     );
 
   const line = svg
