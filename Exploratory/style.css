@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1em;
+  background: black url("sky.jpg") no-repeat fixed; 
+  background-size: 100%;
+  overflow: hidden;
+  width: 100%
+}
+  
+  .dot {
+    cursor: pointer;
+    color: steelblue;
+    opacity: 0.5;
+  }
+  
+  .dot:hover {
+    fill: orange;
+  }
+  
+  .axis-label {
+    font-size: 14px;
+    fill: black;
+    text-anchor: middle;
+  }
+  
+  .trend {
+    fill: black;
+    fill-opacity: 0;
+    stroke: black;
+    stroke-width: 2;
+  }
+
+  path.state {
+    stroke: white;
+    stroke-width: 1;
+    stroke-opacity: 0.5;
+  }
+
+  div.tooltip {   
+    position: absolute;           
+   text-align: center;           
+   width: 60px;                  
+   height: 28px;                 
+   padding: 2px;             
+   font: 12px sans-serif;        
+   background:none;   
+   border: 0px;      
+   border-radius: 8px;           
+   pointer-events: none;         
+}
+
+div{
+  position: absolute;
+  height: 1000px;
+
+}
+
+#timeseries {    
+  position: absolute;
+  top:200px;
+  left:800px;
+  height: 500px;
+}
+
+#choroplethmap {    
+  position: absolute;
+  top:200px;
+  left:20px;
+  height: 500px;
+}
