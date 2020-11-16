@@ -2,7 +2,7 @@
  * CONSTANTS AND GLOBALS
  * */
 const height = 500,
-  width = 400,
+  width = 600,
   margin = { top: -20, bottom: 50, left: 60, right: 40 };
   //innerWidth = width - margin.left - margin.right,
   //innerHeight = height - margin.top - margin.bottom; 
@@ -64,7 +64,7 @@ function init() {
     .join("path")
     .attr("d", path)
     .attr("class", "state")
-    .attr("fill", "#FFDAB9");
+    .attr("fill", "#FFE5B4");
   
 
   draw(); // calls the draw function

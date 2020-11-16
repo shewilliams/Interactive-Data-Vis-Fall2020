@@ -2,7 +2,7 @@
 
 ## Prospectus
 
-For this exploratory project, I will be exploring which countries have citizens that are more likely to travel internationally with the departures tourism data provided by [Our World in Data](https://ourworldindata.org/tourism). The following variables will be used: Entity, Year, Departures, and GDP per Capita, PPP. 
+For this exploratory project, I will be exploring which countries have citizens that are more likely to travel internationally with the departures tourism data provided by [Our World in Data](https://ourworldindata.org/tourism). The following variables will be observed per country: Entity, Year, Departures.
 
 ## Sketches
 

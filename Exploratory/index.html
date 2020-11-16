@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-  <head>
+<head>
     <meta charset="utf-8">
-
-    <!-- this is the title that goes in the browser tab name  -->
-    <title>Interactive Data Visualization Tutorial</title>
-
-    <!-- custom font: https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap -->
+    <title>Exploratory Project</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="../lib/d3.js"></script>
-    <script src="timeseries.js"></script>
-    <script src="map.js"></script>
-    
   </head>
 
   <body>
-    <div class="container">
+
     <header>
-      <h1>Which countries have the most international departures?</h1>
-      <h2>Time Series</h2>
+      <center><h1>Which countries have the most international departures?</h1>
     </header>
-  </div>
 
-  <div class="container">
-    <div id="choroplethmap"> </div>
-  </div>
-
-    <div class="container">
-      <div id="timeseries"> </div>
-    </div>
-
-    <div>
+    <div id = "container"></div>
+    <div id="hover-content"></div>
+    <div id="choroplethmap"></div>
+    <script src="map.js"></script></div>
+    
+<div id = "container">
+    <div id="timeseries"></div>
     <label for="dropdown">Select a Country</label>
-    <select id="dropdown" name="dropdown"></select></div>
+    <select id="dropdown" name="dropdown"></select>
+    <script src="timeseries.js"></script></div>
+
+    
+    
+  </center>
+
+
+   
+
  
   </body>
 </html>

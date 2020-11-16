@@ -14,7 +14,7 @@ body {
   }
   
   .dot:hover {
-    fill: orange;
+    fill: goldenrod;
   }
   
   .axis-label {
@@ -26,7 +26,7 @@ body {
   .trend {
     fill: black;
     fill-opacity: 0;
-    stroke: black;
+    stroke: whitesmoke;
     stroke-width: 2;
   }
 
@@ -37,9 +37,10 @@ body {
   }
 
   div.tooltip {   
-    position: absolute;           
-   text-align: center;           
-   width: 60px;                  
+   position: absolute;           
+   text-align: center; 
+   left: 150px;          
+   width: 100px;                  
    height: 28px;                 
    padding: 2px;             
    font: 12px sans-serif;        
@@ -47,24 +48,4 @@ body {
    border: 0px;      
    border-radius: 8px;           
    pointer-events: none;         
-}
-
-div{
-  position: absolute;
-  height: 1000px;
-
-}
-
-#timeseries {    
-  position: absolute;
-  top:200px;
-  left:800px;
-  height: 500px;
-}
-
-#choroplethmap {    
-  position: absolute;
-  top:200px;
-  left:20px;
-  height: 500px;
 }
