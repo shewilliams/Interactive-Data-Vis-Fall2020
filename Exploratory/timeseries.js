@@ -1,16 +1,17 @@
+export function timeseries() {
 /**
  * CONSTANTS AND GLOBALS
  * */
-const width = 500,
+const width = 400,
   height = 500,
-  margin = { top: 20, bottom: 50, left: 50, right: 40 },
+  margin = { top: 20, bottom: 50, left: 40, right: 40 },
   radius = 3,
   default_selection = "Select a Country";
 
 var div = d3.select("body")
 	.append("div")   
     .attr("class", "tooltip")               
-    .style("opacity", 0);
+    .style("opacity", .8); 
 
 /** these variables allow us to access anything we manipulate in
  * init() but need access to in draw().
@@ -41,7 +42,7 @@ let state = {
 d3.csv("tourists.csv", d => ({
   year: new Date(d.Year, 0, 1),
   country: d.Entity,
-  arrivals: +d.Arrivals,
+  //arrivals: +d.Arrivals,
   departures: +d.Departures,
 })).then(raw_data => {
   console.log("raw_data", raw_data);
@@ -109,7 +110,7 @@ function init() {
     .attr("class", "axis-label")
     .attr("x", "50%")
     .attr("dy", "3em")
-    .text("Year");
+    .text("Year")
 
   // add the yAxis
   svg
@@ -180,7 +181,7 @@ function draw() {
           .on("mouseout", function(d) {       
               div.transition()      
                  .duration(500)      
-                 .style("opacity", 0);   
+                 .style("opacity", .8);   
           }),
       update => update,
       exit =>
@@ -223,4 +224,5 @@ function draw() {
         .attr("opacity", 1)
         .attr("d", d => lineFunc(d)),
     );
+}
 }

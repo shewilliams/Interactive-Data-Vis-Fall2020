@@ -3,34 +3,42 @@
     <meta charset="utf-8">
     <title>Exploratory Project</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="../lib/d3.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
   </head>
 
   <body>
-
+    <center>
     <header>
-      <center><h1>Which countries have the most international departures?</h1>
+      <h1>How many international departures have occurred around the world?</h1>
     </header>
+    <div class="source">
+      <p><b>Source:</b> <a href="https://ourworldindata.org/tourism">Tourism - Our World in Data</a></p>
+    </div>
 
-    <div id = "container"></div>
-    <div id="hover-content"></div>
-    <div id="choroplethmap"></div>
-    <script src="map.js"></script></div>
-    
-<div id = "container">
-    <div id="timeseries"></div>
-    <label for="dropdown">Select a Country</label>
-    <select id="dropdown" name="dropdown"></select>
-    <script src="timeseries.js"></script></div>
+<div>
+      <div class='section' id='one'>
+        <div class='text'>
+          <label for="dropdown">Select a Country</label>
+        <select id="dropdown" name="dropdown"></select>
+          <div class='graph' id="timeseries"> </div>
+        </div>  
+        <div>
+          <div class='graph' id="map"> </div>
+        </div>
+      </div>
+      
 
-    
-    
-  </center>
+    </div>
+  </div>
+</center>
 
-
-   
-
+  <script src="./main.js" type="module"></script>
+  <script src="../lib/d3.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="./d3-tip.js"></script>
  
   </body>
 </html>
