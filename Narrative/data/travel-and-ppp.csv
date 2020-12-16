@@ -1,0 +1,190 @@
+﻿entity,id,region,travel,ppp,passport,wheretolive,bankaccount,contract,outsidehome,outsidecountry
+Albania,ALB,Central and Eastern Europe,1,4531.02,1,1,1,1,1,1
+Armenia,ARM,Central and Eastern Europe,1,3914.5,1,1,1,1,1,1
+Azerbaijan,AZE,Central and Eastern Europe,1,4147.09,1,1,1,1,1,1
+Belarus,BLR,Central and Eastern Europe,1,5761.75,1,1,1,1,1,1
+Bosnia and Herzegovina,BIH,Central and Eastern Europe,1,5394.59,1,1,1,1,1,1
+Bulgaria,BGR,Central and Eastern Europe,1,8331.06,1,1,1,1,1,1
+Croatia,HRV,Central and Eastern Europe,1,13412.34,1,1,1,1,1,1
+Czech Republic,CZE,Central and Eastern Europe,1,20379.9,1,1,1,1,1,1
+Estonia,EST,Central and Eastern Europe,1,20388.21,1,1,1,1,1,1
+Georgia,GEO,Central and Eastern Europe,1,4357,1,1,1,1,1,1
+Hungary,HUN,Central and Eastern Europe,1,14457.61,1,1,1,1,1,1
+Kazakhstan,KAZ,Central and Eastern Europe,1,9247.58,1,1,1,1,1,1
+Kosovo,XKX,Central and Eastern Europe,1,4045.61,1,1,1,1,1,1
+Kyrgyzstan,KGZ,Central and Eastern Europe,1,1242.77,1,1,1,1,1,1
+Latvia,LVA,Central and Eastern Europe,1,15586.58,1,1,1,1,1,1
+Lithuania,LTU,Central and Eastern Europe,1,16882.64,1,1,1,1,1,1
+Moldova,MDA,Central and Eastern Europe,1,3509.69,1,1,1,1,1,1
+Montenegro,MNE,Central and Eastern Europe,1,7803.41,1,1,1,1,1,1
+North Macedonia,MKD,Central and Eastern Europe,1,5430.87,1,1,1,1,1,1
+Poland,POL,Central and Eastern Europe,1,13861.31,1,1,1,1,1,1
+Romania,ROU,Central and Eastern Europe,1,10807.8,1,1,1,1,1,1
+Russia,RUS,Central and Eastern Europe,1,10720.33,1,1,1,1,1,1
+Serbia,SRB,Central and Eastern Europe,1,6284.19,1,1,1,1,1,1
+Slovakia,SVK,Central and Eastern Europe,1,17554.31,1,1,1,1,1,1
+Slovenia,SVN,Central and Eastern Europe,1,23500.75,1,1,1,1,1,1
+Tajikistan,TJK,Central and Eastern Europe,1,806.04,1,1,1,1,1,1
+Ukraine,UKR,Central and Eastern Europe,1,2640.68,1,1,1,1,1,1
+Uzbekistan,UZB,Central and Eastern Europe,1,1826.57,1,1,1,1,1,1
+China,CHN,Eastern Asia,1,8879.44,1,1,1,1,1,1
+Hong Kong,HKG,Eastern Asia,1,46165.86,1,1,1,1,1,1
+Japan,JPN,Eastern Asia,1,38386.51,1,1,1,1,1,1
+Mongolia,MNG,Eastern Asia,1,3669.42,1,1,1,1,1,1
+South Korea,KOR,Eastern Asia,1,31616.84,1,1,1,1,1,1
+Antigua and Barbuda,ATG,Latin America and Caribbean,0.83,15383.42,1,0,1,1,1,1
+Argentina,ARG,Latin America and Caribbean,1,14591.86,1,1,1,1,1,1
+Bahamas,BHS,Latin America and Caribbean,1,31827.24,1,1,1,1,1,1
+Barbados,BRB,Latin America and Caribbean,0.83,17391.43,0,1,1,1,1,1
+Belize,BLZ,Latin America and Caribbean,0.83,4887.58,0,1,1,1,1,1
+Bolivia,BOL,Latin America and Caribbean,1,3351.12,1,1,1,1,1,1
+Brazil,BRA,Latin America and Caribbean,1,9925.39,1,1,1,1,1,1
+Chile,CHL,Latin America and Caribbean,1,14999.37,1,1,1,1,1,1
+Colombia,COL,Latin America and Caribbean,1,6377.85,1,1,1,1,1,1
+Costa Rica,CRI,Latin America and Caribbean,1,11814.63,1,1,1,1,1,1
+Dominica,DMA,Latin America and Caribbean,0.83,7274.72,0,1,1,1,1,1
+Dominican Republic,DOM,Latin America and Caribbean,1,7609.34,1,1,1,1,1,1
+Ecuador,ECU,Latin America and Caribbean,1,6213.5,1,1,1,1,1,1
+El Salvador,SLV,Latin America and Caribbean,1,3910.26,1,1,1,1,1,1
+Grenada,GRD,Latin America and Caribbean,0.83,10152.83,0,1,1,1,1,1
+Guatemala,GTM,Latin America and Caribbean,1,4451.45,1,1,1,1,1,1
+Guyana,GUY,Latin America and Caribbean,0.83,4586.05,0,1,1,1,1,1
+Haiti,HTI,Latin America and Caribbean,0.67,765.73,0,0,1,1,1,1
+Honduras,HND,Latin America and Caribbean,1,2453.73,1,1,1,1,1,1
+Jamaica,JAM,Latin America and Caribbean,1,5069.18,1,1,1,1,1,1
+Mexico,MEX,Latin America and Caribbean,1,9278.42,1,1,1,1,1,1
+Nicaragua,NIC,Latin America and Caribbean,1,2159.16,1,1,1,1,1,1
+Panama,PAN,Latin America and Caribbean,1,15150.35,1,1,1,1,1,1
+Paraguay,PRY,Latin America and Caribbean,1,5680.58,1,1,1,1,1,1
+Peru,PER,Latin America and Caribbean,1,6710.51,1,1,1,1,1,1
+Puerto Rico,PRI,Latin America and Caribbean,1,31108.75,1,1,1,1,1,1
+St. Kitts and Nevis,KNA,Latin America and Caribbean,1,19155.29,1,1,1,1,1,1
+St. Lucia,LCA,Latin America and Caribbean,0.83,11047.44,0,1,1,1,1,1
+St. Vincent and the Grenadines,VCT,Latin America and Caribbean,0.83,7212.96,0,1,1,1,1,1
+Suriname,SUR,Latin America and Caribbean,1,5626.8,1,1,1,1,1,1
+Trinidad and Tobago,TTO,Latin America and Caribbean,0.83,16238.19,0,1,1,1,1,1
+Uruguay,URY,Latin America and Caribbean,1,17322.15,1,1,1,1,1,1
+Venezuela,VEN,Latin America and Caribbean,1,0,1,1,1,1,1,1
+Algeria,DZA,Middle East and Northern Africa,0.83,4044.28,0,1,1,1,1,1
+Bahrain,BHR,Middle East and Northern Africa,0.67,23709.43,1,0,1,1,0,1
+Egypt,EGY,Middle East and Northern Africa,0.67,2440.51,0,1,1,1,0,1
+Iran,IRN,Middle East and Northern Africa,0.33,5520.31,0,0,1,1,0,0
+Iraq,IRQ,Middle East and Northern Africa,0.5,5205.29,1,0,1,1,0,0
+Israel,ISR,Middle East and Northern Africa,1,40541.86,1,1,1,1,1,1
+Jordan,JOR,Middle East and Northern Africa,0.33,4162.82,0,0,1,1,0,0
+Kuwait,KWT,Middle East and Northern Africa,0.67,29759.44,1,0,1,1,0,1
+Lebanon,LBN,Middle East and Northern Africa,1,7801.18,1,1,1,1,1,1
+Libya,LBY,Middle East and Northern Africa,0.83,5756.7,0,1,1,1,1,1
+Morocco,MAR,Middle East and Northern Africa,1,3036.33,1,1,1,1,1,1
+Oman,OMN,Middle East and Northern Africa,0.33,15130.94,0,0,1,1,0,0
+Qatar,QAT,Middle East and Northern Africa,0.5,61264.4,1,0,1,1,0,0
+Saudi Arabia,SAU,Middle East and Northern Africa,0.33,20803.74,0,0,1,1,0,0
+Syria,SYR,Middle East and Northern Africa,0.5,0,1,0,1,1,0,0
+Tunisia,TUN,Middle East and Northern Africa,1,3481.23,1,1,1,1,1,1
+Turkey,TUR,Middle East and Northern Africa,1,10513.65,1,1,1,1,1,1
+United Arab Emirates,ARE,Middle East and Northern Africa,0.33,40644.8,0,0,1,1,0,0
+West Bank and Gaza,PSE,Middle East and Northern Africa,0.5,3254.49,1,0,1,1,0,0
+Yemen,YEM,Middle East and Northern Africa,0.5,882.4,0,0,1,1,0,1
+Canada,CAN,North America,1,45148.55,1,1,1,1,1,1
+United States,USA,North America,1,59957.73,1,1,1,1,1,1
+Australia,AUS,Oceania,1,54066.47,1,1,1,1,1,1
+Fiji,FJI,Oceania,0.83,6101.03,0,1,1,1,1,1
+Kiribati,KIR,Oceania,1,1640.5,1,1,1,1,1,1
+Maldives,MDV,Oceania,1,9540.63,1,1,1,1,1,1
+Marshall Islands,MHL,Oceania,1,3666.7,1,1,1,1,1,1
+"Micronesia, Fed. Sts.",FSM,Oceania,1,3289.7,1,1,1,1,1,1
+New Zealand,NZL,Oceania,1,42849.43,1,1,1,1,1,1
+Palau,PLW,Oceania,1,16078.27,1,1,1,1,1,1
+Papua New Guinea,PNG,Oceania,0.83,2695.25,0,1,1,1,1,1
+Samoa,WSM,Oceania,0.83,4258.49,0,1,1,1,1,1
+Solomon Islands,SLB,Oceania,0.83,2059.05,0,1,1,1,1,1
+Tonga,TON,Oceania,1,4217.48,1,1,1,1,1,1
+Vanuatu,VUT,Oceania,0.83,3082.36,1,0,1,1,1,1
+Brunei Darussalam,BRN,Southeastern Asia,0.67,28572.15,1,0,1,1,0,1
+Cambodia,KHM,Southeastern Asia,1,1385.26,1,1,1,1,1,1
+Indonesia,IDN,Southeastern Asia,1,3837.65,1,1,1,1,1,1
+Laos,LAO,Southeastern Asia,1,2423.85,1,1,1,1,1,1
+Malaysia,MYS,Southeastern Asia,0.67,10254.23,1,0,1,1,0,1
+Myanmar,MMR,Southeastern Asia,0.83,1291.54,0,1,1,1,1,1
+Philippines,PHL,Southeastern Asia,0.83,3123.23,0,1,1,1,1,1
+Singapore,SGP,Southeastern Asia,1,60913.75,1,1,1,1,1,1
+Thailand,THA,Southeastern Asia,1,6592.91,1,1,1,1,1,1
+Timor-Leste,TLS,Southeastern Asia,1,1294.72,1,1,1,1,1,1
+Vietnam,VNM,Southeastern Asia,1,2365.62,1,1,1,1,1,1
+Afghanistan,AFG,Southern Asia,0.67,556.3,1,0,1,1,0,1
+Bangladesh,BGD,Southern Asia,1,1563.91,1,1,1,1,1,1
+Bhutan,BTN,Southern Asia,1,3286.57,1,1,1,1,1,1
+India,IND,Southern Asia,1,1981.65,1,1,1,1,1,1
+Nepal,NPL,Southern Asia,1,911.44,1,1,1,1,1,1
+Pakistan,PAK,Southern Asia,0.83,1464.99,0,1,1,1,1,1
+Sri Lanka,LKA,Southern Asia,1,4077.04,1,1,1,1,1,1
+Angola,AGO,Sub-Saharan Africa,1,4095.81,1,1,1,1,1,1
+Benin,BEN,Sub-Saharan Africa,0.67,1136.59,0,0,1,1,1,1
+Botswana,BWA,Sub-Saharan Africa,0.83,7893.21,0,1,1,1,1,1
+Burkina Faso,BFA,Sub-Saharan Africa,0.83,738.27,1,0,1,1,1,1
+Burundi,BDI,Sub-Saharan Africa,1,293,1,1,1,1,1,1
+Cameroon,CMR,Sub-Saharan Africa,0.5,1425.11,0,0,0,1,1,1
+Cape Verde,CPV,Sub-Saharan Africa,1,3292.65,1,1,1,1,1,1
+Central African Republic,CAF,Sub-Saharan Africa,0.83,450.9,1,0,1,1,1,1
+Chad,TCD,Sub-Saharan Africa,0.67,665.95,1,0,0,1,1,1
+Comoros,COM,Sub-Saharan Africa,0.83,1323.81,1,0,1,1,1,1
+"Congo, Dem. Rep.",COD,Sub-Saharan Africa,1,467.07,1,1,1,1,1,1
+"Congo, Rep.",COG,Sub-Saharan Africa,0.67,1767.89,0,0,1,1,1,1
+Cote d'Ivoire,CIV,Sub-Saharan Africa,1,2111.03,1,1,1,1,1,1
+Djibouti,DJI,Sub-Saharan Africa,1,2914.38,1,1,1,1,1,1
+Equatorial Guinea,GNQ,Sub-Saharan Africa,0.5,9667.91,1,0,0,0,1,1
+Eritrea,ERI,Sub-Saharan Africa,1,0,1,1,1,1,1,1
+Eswatini,SWZ,Sub-Saharan Africa,0.67,3953.09,1,1,0,0,1,1
+Ethiopia,ETH,Sub-Saharan Africa,1,768.52,1,1,1,1,1,1
+Gabon,GAB,Sub-Saharan Africa,0.5,7230.4,0,0,0,1,1,1
+Gambia,GMB,Sub-Saharan Africa,1,676.66,1,1,1,1,1,1
+Ghana,GHA,Sub-Saharan Africa,1,2025.93,1,1,1,1,1,1
+Guinea,GIN,Sub-Saharan Africa,0.83,856.57,1,0,1,1,1,1
+Guinea-Bissau,GNB,Sub-Saharan Africa,0.67,736.73,1,0,0,1,1,1
+Kenya,KEN,Sub-Saharan Africa,1,1572.34,1,1,1,1,1,1
+Lesotho,LSO,Sub-Saharan Africa,1,1150.08,1,1,1,1,1,1
+Liberia,LBR,Sub-Saharan Africa,1,698.7,1,1,1,1,1,1
+Madagascar,MDG,Sub-Saharan Africa,0.83,515.29,0,1,1,1,1,1
+Malawi,MWI,Sub-Saharan Africa,0.67,356.72,0,0,1,1,1,1
+Mali,MLI,Sub-Saharan Africa,0.67,830.56,0,0,1,1,1,1
+Mauritania,MRT,Sub-Saharan Africa,1,1578.11,1,1,1,1,1,1
+Mauritius,MUS,Sub-Saharan Africa,1,10484.91,1,1,1,1,1,1
+Mozambique,MOZ,Sub-Saharan Africa,1,461.42,1,1,1,1,1,1
+Namibia,NAM,Sub-Saharan Africa,0.83,5303.31,0,1,1,1,1,1
+Niger,NER,Sub-Saharan Africa,0.67,516.89,1,0,0,1,1,1
+Nigeria,NGA,Sub-Saharan Africa,0.67,1968.56,0,0,1,1,1,1
+Rwanda,RWA,Sub-Saharan Africa,1,772.32,1,1,1,1,1,1
+Sao Tome and Principe,STP,Sub-Saharan Africa,1,1811.01,1,1,1,1,1,1
+Senegal,SEN,Sub-Saharan Africa,0.83,1361.7,1,0,1,1,1,1
+Seychelles,SYC,Sub-Saharan Africa,0.83,15906.08,0,1,1,1,1,1
+Sierra Leone,SLE,Sub-Saharan Africa,1,499.38,1,1,1,1,1,1
+Somalia,SOM,Sub-Saharan Africa,0.83,0,1,0,1,1,1,1
+South Africa,ZAF,Sub-Saharan Africa,1,6132.48,1,1,1,1,1,1
+South Sudan,SSD,Sub-Saharan Africa,1,0,1,1,1,1,1,1
+Sudan,SDN,Sub-Saharan Africa,0.33,1111.87,0,0,1,1,0,0
+Tanzania,TZA,Sub-Saharan Africa,1,1004.84,1,1,1,1,1,1
+Togo,TGO,Sub-Saharan Africa,1,626.09,1,1,1,1,1,1
+Uganda,UGA,Sub-Saharan Africa,0.67,747.2,0,0,1,1,1,1
+Zambia,ZMB,Sub-Saharan Africa,0.83,1534.87,0,1,1,1,1,1
+Zimbabwe,ZWE,Sub-Saharan Africa,1,1548.17,1,1,1,1,1,1
+Austria,AUT,Western Europe,1,47549.08,1,1,1,1,1,1
+Belgium,BEL,Western Europe,1,44288.51,1,1,1,1,1,1
+Cyprus,CYP,Western Europe,0.83,26338.69,0,1,1,1,1,1
+Denmark,DNK,Western Europe,1,57141.06,1,1,1,1,1,1
+Finland,FIN,Western Europe,1,46316.75,1,1,1,1,1,1
+France,FRA,Western Europe,1,38812.16,1,1,1,1,1,1
+Germany,DEU,Western Europe,1,44349.59,1,1,1,1,1,1
+Greece,GRC,Western Europe,1,18930.22,1,1,1,1,1,1
+Iceland,ISL,Western Europe,1,71310.94,1,1,1,1,1,1
+Ireland,IRL,Western Europe,1,69822.35,1,1,1,1,1,1
+Italy,ITA,Western Europe,1,32406.72,1,1,1,1,1,1
+Luxembourg,LUX,Western Europe,1,107627.15,1,1,1,1,1,1
+Malta,MLT,Western Europe,1,27239.07,1,1,1,1,1,1
+Netherlands,NLD,Western Europe,1,48675.22,1,1,1,1,1,1
+Norway,NOR,Western Europe,1,75496.75,1,1,1,1,1,1
+Portugal,PRT,Western Europe,1,21490.43,1,1,1,1,1,1
+San Marino,SMR,Western Europe,1,45394.2,1,1,1,1,1,1
+Spain,ESP,Western Europe,1,28170.43,1,1,1,1,1,1
+Sweden,SWE,Western Europe,1,53791.51,1,1,1,1,1,1
+Switzerland,CHE,Western Europe,1,80449.99,1,1,1,1,1,1
+United Kingdom,GBR,Western Europe,1,40361.42,1,1,1,1,1,1

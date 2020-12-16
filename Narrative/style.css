@@ -1,0 +1,191 @@
+header {
+  font-family: avenir;
+}
+
+body {
+  margin: 5%;
+  font-family: avenir;
+  background-color: rgb(16,17,33);
+  color: #f5fbef;
+  stroke-width: 1.5px;
+  padding: 10px;
+}
+.div {
+  margin: auto;
+}
+
+a:link {
+  color: rgb(222,158,54);
+}
+
+a:visited {
+  color: rgb(23,126,137);
+}
+
+a:hover {
+  color: rgb(245,251,239);
+}
+
+a:active {
+  color: rgb(197,227,225);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5fr auto auto auto 5fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  gap: 1% 1%;
+  grid-template-areas:
+      ". intro intro intro ."
+      ". ratio-table ratio-p ratio-p ."
+      ". indicator-p indicator-p indicator-p ."
+      ". indicator-table indicator-table indicator-table ."
+      ". indicator-scatter indicator-scatter indicator-scatter ."
+      ". map-p map-p map-p ."
+      ". map-legend map map ."
+      ". conclusion conclusion conclusion ."
+      ". source source source .";
+  }
+  
+  .intro { 
+    grid-area: intro; 
+  }
+  
+  .ratio-table { 
+    grid-area: ratio-table; 
+  }
+  
+  .ratio-p { 
+    grid-area: ratio-p; 
+  }
+  
+  .indicator-p { 
+    grid-area: indicator-p; 
+  }
+  
+  .indicator-table { 
+    grid-area: indicator-table; 
+    text-align: center;
+  }
+  
+  .indicator-scatter { 
+    grid-area: indicator-scatter; 
+    text-align: center;
+    height: auto;
+  }
+  
+  .map { 
+    grid-area: map; 
+  }
+  
+  .map-legend { 
+    grid-area: map-legend; 
+    text-align: right;
+  }
+  
+  .map-p { 
+    grid-area: map-p; 
+    height: 100%;
+    text-align: left;
+  }
+  
+  .conclusion { 
+    grid-area: conclusion; 
+  }
+
+  .source { 
+    grid-area: source; 
+  }
+  
+  svg {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    margin: auto;
+  }
+  
+  .axis-label {
+    font-size: 12px;
+    text-anchor: middle;
+  }
+  
+  .label {
+    fill: #f5fbef;
+  }
+  
+  .axis {
+    font-size: 12px;
+  }
+
+  .names {
+    fill: none;
+    stroke: #f5fbef;
+    stroke-linejoin: round;
+  }
+  
+  .tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    padding: 6px;
+  }
+
+  .d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next";
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #f5fbef;
+    border-radius: 1px;
+    pointer-events: none;
+  }
+
+  .d3-tip:after {      
+    box-sizing: border-box;
+    display: inline;
+    font-size: 8px;
+    width: 100%;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    pointer-events: none;
+    
+  }
+
+  .d3-tip.n:after {
+    content: "\25BC";
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .d3-tip.e:after {
+    content: "\25C0";
+    margin: -4px 0 0 0;
+    top: 50%;
+    left: -8px;
+   }
+
+  .d3-tip.s:after {
+    content: "\25B2";
+    margin: 0 0 1px 0;
+    top: -8px;
+    left: 0;
+    text-align: center;
+  }
+
+  .d3-tip.w:after {
+    content: "\25B6";
+    margin: -4px 0 0 -1px;
+    top: 50%;
+    left: 100%;
+  }
+
+
+  .details{
+    color: #f5fbef;
+  }

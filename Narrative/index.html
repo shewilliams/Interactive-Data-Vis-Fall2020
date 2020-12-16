@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Narrative Data Visualization Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Do women around the world have the freedom to travel?</h1>
+    </header>
+
+    <div class="grid-container">
+      <div class="intro">
+        <h3>Background Story</h3>
+        <p>When I was vacationing in Montenegro, a traveler (a teacher from Massachusetts on a Europe country-hopping adventure with her friend) introduced me to the Facebook group, <a href="https://thesolofemaletravelernetwork.com"/>The Solo Female Traveler Network</a>, a travel community of solo female travelers that boasts over 400k members empowering women to travel.
+        This sparked my interest in travel trends for different demographic groups. In particular, this project will focus on the travel accessiblity of women from their native home country through the lens of tourism.</p>
+
+        <h3>Introduction</h3>
+        <p>According to the <a href="https://www.e-unwto.org/doi/pdf/10.18111/9789284421152">2019 International Tourism Highlights</a> by the United Nations World Trade Organization (UNWTO), these are the following consumer travel trends:
+          <ul>
+            <li><b>Travel 'to change':</b> Live like a local, quest for authenticity and transformation.</li>
+            <li><b>Travel ‘to show’:</b> ‘Instagramable’ moments, experiences and destinations.</li>
+            <li><b>Pursuit of a healthy life:</b> Walking, wellness and sports tourism.</li>
+            <li><b>Rise of the ‘access’ economy</b> </li>
+            <li><b>Solo travel & multigenerational travel:</b> As a result of aging population and single households.</li>
+            <li><b>Rising awareness on sustainability:</b> Zero plastic and climate change.</li>
+          </ul>
+        While the above list have some seemingly nice mental health benefits, what does this mean for women exactly? This depends on their freedom to make a decision in their native country. Before I jump into this analysis, let's take a basic look
+        at the ratio between the total number of women and men worldwide.
+        </p>
+        
+      </div>
+
+      <div class="ratio-table">
+        <div class='graph' id="d3-container-1"> </div>
+      </div>
+
+      <div class="ratio-p">
+        <p>Per <a href="https://ourworldindata.org/gender-ratio#gender-ratio-across-the-world">Our World in Data</a>, the percentage of men in the total world population account for 50.6%.
+        From the table chart below, Latvia has the most amount of women in their country with a percentage of 54.1%; while, Qatar has the least amount of women worldwide at 24.9%.
+        </p>
+        <center>
+        <table style="width:auto; text-align: center">
+          <tr>
+            <th>Top 10</th>
+            <th>Bottom 10</th> 
+          </tr>
+          <tr>
+            <td>Latvia</td>
+            <td>India</td> 
+          </tr>
+          <tr>
+            <td>Lithuania</td>
+            <td>Bhutan</td> 
+          </tr>
+          <tr>
+            <td>Ukraine</td>
+            <td>Equitorial Guinea</td> 
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>Maldives</td> 
+          </tr>
+          <tr>
+            <td>Belarus</td>
+            <td>Saudi Arabia</td> 
+          </tr>
+          <tr>
+            <td>Estonia</td>
+            <td>Kuwait</td> 
+          </tr>
+          <tr>
+            <td>El Salvador</td>
+            <td>Bahrain</td> 
+          </tr>
+          <tr>
+            <td>Armenia</td>
+            <td>Oman</td> 
+          </tr>
+          <tr>
+            <td>Portugal</td>
+            <td>United Arab Emirates</td> 
+          </tr>
+          <tr>
+            <td>Hungary</td>
+            <td>Qatar</td> 
+          </tr>
+        </table>
+      </center>
+      </div>
+
+      <div class="indicator-p">
+        <p>Pulling data from the World Bank's <a href="https://www.worldbank.org/en/data/datatopics/gender">Gender Data Portal</a>, the following indicators are pulled to calculate a woman's Travel Indicator Score:
+        <ul>
+          <li>A woman can apply for a passport in the same way as a man (SG.APL.PSPT.EQ)</li>
+          <li>A woman can choose where to live in the same way as a man (SG.LOC.LIVE.EQ)</li>
+          <li>A woman can open a bank account in the same way as a man (SG.OPN.BANK.EQ)</li>
+          <li>A woman can sign a contract in the same way as a man (SG.CNT.SIGN.EQ)</li>
+          <li>A woman can travel outside her home in the same way as a man (SG.HME.TRVL.EQ)</li>
+          <li>A woman can travel outside the country in the same way as a man (SG.CTR.TRVL.EQ)</li>
+        </ul>
+        The indicators above were picked to highlight the freedom the woman can operate in an equivalent manner as a man. For each country, their total number of yes's (measured by a 1; no's receive a 0) is divided by the number of total indicators (6) to measure a woman's travel accessibility.
+        </p>
+      </div>
+
+      <div class="indicator-table">
+        <div class='graph' id="d3-container-3"></div>
+      </div>
+
+      <div class="indicator-scatter">
+        <div>
+          <center>
+            <svg id="d3-container-4" width="800" height="900"></svg>
+          </center>
+        </div>
+      </div>
+
+      <div class="map">
+        <div class='graph' id="d3-container-2"> </div>
+      </div>
+
+      <div class="map-legend">
+        <div id="legend" style="display: inline-block"></div>
+      </div>
+      
+      <div class="map-p">
+        <p>
+          What exactly are the implications gathered from the Middle East, Northern Africa, and Sub-Saharan African regions? In terms of the gender gap, which  measures the gap between women and men across four key areas: health, education, economy and politics,
+          according to the <a href="https://www.weforum.org/reports/the-global-gender-gap-report-2018/">2018 Global Gender Gap</a>,  
+          it would take 135 years to close the gender gap in Sub-Saharan Africa and nearly 153 years in the Middle East and North Africa.
+        (For further context, the gender gap will take 61 years in Western Europe, 70 years in South Asia, 74 years in Latin America and the Caribbean, 124 years in Eastern Europe,
+      171 years in East Asia and Oceania, and 165 years in North America.) 
+        </p>
+
+        <p>
+          While this project primarily focused on travel accessibilty for women, it would be interesting to explore a woman's travel accessibility based on other indicators such as education, family responsibilities, and wealth.
+        </p>
+      </div>
+
+      <div class="source">
+        <h3>Sources</h3>
+        <p><ul>
+          <li><a href="https://www.e-unwto.org/doi/pdf/10.18111/9789284421152">2019 International Tourism Highlights</a></li>
+          <li><a href="https://ourworldindata.org/gender-ratio#gender-ratio-across-the-world">Our World in Data</a></li>
+          <li><a href="https://www.worldbank.org/en/data/datatopics/gender">Gender Data Portal</a></li>
+          <li><a href="https://www.weforum.org/reports/the-global-gender-gap-report-2018/">2018 Global Gender Gap</a> </li>
+        </ul></p>
+        <h3>Coding Sources</h3>
+        <p><ul>
+          <li><a href="http://bl.ocks.org/denisemauldin/cb870e6f439864a5ae74d4fc561ac46f">Choropleth World Map w/ Threshold Scale</a></li>
+          <li><a href="http://bl.ocks.org/syntagmatic/e8ccca52559796be775553b467593a9f">Continuous Legend</a></li>
+          <li><a href="https://bl.ocks.org/niphadkarneha/acebec8004f971d1f47abf69d1993046">Scatter Plot</a></li>
+          <li><a href="https://bl.ocks.org/mbostock/7555321">Wrapping Long Labels</a> </li>
+        </ul></p>
+      </div>
+    </div>
+
+
+    <script src="./main.js" type="module"></script>
+ 
+    <script src="../../../lib/d3.js"></script>
+ 
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="./d3-tip.js"></script>
+  </body>
+</html>
